@@ -1,3 +1,3 @@
 # Cleanser
 ## The future belongs to those who believe in the beauty of their dreams. -Eleanor Roosevelt
-### I have incorporated GIT development into the following courses: 2***1, 0***2, 8***3. Autumn 2024.
+### I have incorporated GIT development into the following courses: (21 02 83) . Semester Autumn 2024.
