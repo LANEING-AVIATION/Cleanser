@@ -1,4 +1,12 @@
-# Cleanser-The Cleanser Project
-### The future belongs to those who believe in the beauty of their dreams. -Eleanor Roosevelt
-### I have incorporated GIT development into the following courses: (21 02 83) . Semester Autumn 2024.
+# Cleanser-The Cleanser Project: Phase One
+
+After a full year of continuous exploration and research in the first year of college, we have formulated the plan for the first phase of this project.
+
+## Schedule
+
+**Fall Semester 2024**
+
+- **Programming Activities:** Every Monday and Wednesday
+- **Session Duration:** Four periods per programming day, each lasting 45 minutes
+
 ![The Cleanser Project](https://github.com/LANEING-AVIATION/Cleanser/blob/main/Homepage/init.jpg)
