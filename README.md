@@ -1,6 +1,6 @@
 # Cleanser-The Cleanser Project: Phase One
 
-After a full year of continuous exploration and research in the first year of college, we have formulated the plan for the first phase of this project.
+After a full year of continuous exploration and research in the first year of college, I have formulated the plan for the first phase of this project.
 
 ## Schedule
 
