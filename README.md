@@ -8,7 +8,7 @@ After a full year of continuous exploration and research in the first year of co
 
 - **Programming Activities:** Every Monday and Wednesday
 - **Session Duration:** Four periods per programming day, each lasting 45 minutes
-- **Toolchain:** POJ,ChatGPT,CxStudio,MGit
+- **Toolchain:** POJ,ChatGPT,CxStudio,FreeFileAsync
 - **Header:** ROOT160322-70
 
 ![The Cleanser Project](https://github.com/LANEING-AVIATION/Cleanser/blob/main/Homepage/init.jpg)
