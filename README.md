@@ -1,6 +1,6 @@
 # Cleanser-The Cleanser Project: Phase One
 
-Learn anything.
+Code for democracy and peace.
 
 ## Schedule
 
