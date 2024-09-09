@@ -5,5 +5,4 @@
 
 项目概况：
 1、Git仓库（Windows,Ubuntu）
-2、虚拟机VM
-3、备用WSL
+2、虚拟机VM，备用WSL
