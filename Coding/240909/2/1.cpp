@@ -1,3 +1,6 @@
+//In this section the drone is able to perform manual flight successfully,
+//and fly along QGC waypoints.
+
 #include <iostream>
 #include <iomanip>
 #include <sstream>
