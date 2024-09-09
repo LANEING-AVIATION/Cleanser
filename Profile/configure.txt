@@ -1,8 +1,10 @@
-操作步骤：
-1、远端可访问youtube
-2、细节代理配置
-3、启动自动化脚本
+Steps:
 
-项目概况：
-1、Git仓库（Windows,Ubuntu）
-2、虚拟机VM，备用WSL
+    Ensure remote access to YouTube.
+    Configure the proxy settings in detail.
+    Launch the automation script.
+
+Project Overview:
+
+    Git repository (Windows, Ubuntu).
+    Virtual Machine (VM) with WSL as a backup.
