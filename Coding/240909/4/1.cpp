@@ -2,6 +2,8 @@
 //To draw a conclusion of the previous 3 sections of development.
 //I set up the basic simulation environment
 //and I will extend 1 hour of coding in fix of the accident.
+
+//fixed successfully,23:19
 #include <iostream>
 #include <iomanip>
 #include <sstream>
