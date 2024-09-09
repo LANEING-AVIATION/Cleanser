@@ -13,3 +13,6 @@ python multirotor_communication.py iris 0
 
 cd ~/XTDrone/control/keyboard
 python multirotor_keyboard_control.py iris 1 vel
+
+cd ~/QGC
+./QGroundControl.AppImage
