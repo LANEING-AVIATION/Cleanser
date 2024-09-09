@@ -1,8 +1,3 @@
-操作步骤：
-1、远端可访问youtube
-2、细节代理配置
-3、启动自动化脚本
-
 git config --global http.proxy http://10.238.31.17:7890
 git config --global https.proxy https://10.238.31.17:7890
 
