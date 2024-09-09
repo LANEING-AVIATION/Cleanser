@@ -1,0 +1,10 @@
+Steps:
+
+    Ensure remote access to YouTube.
+    Configure the proxy settings in detail.
+    Launch the automation script.
+
+Project Overview:
+
+    Git repository (Windows, Ubuntu).
+    Virtual Machine (VM) with WSL as a backup.
