@@ -21,3 +21,6 @@ cd ~/XTDrone/coordination/launch_generator
 python3 generator.py
 
 cp ~/XTDrone/coordination/launch_generator/multi_vehicle.launch ~/PX4_Firmware/launch/
+
+killall -9 gzclient
+killall -9 gzserver
