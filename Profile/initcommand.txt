@@ -1,0 +1,23 @@
+roscore
+
+cd ~/PX4_Firmware
+roslaunch px4 mavros_posix_sitl.launch
+
+rostopic echo /mavros/state
+
+cd ~/PX4_Firmware
+roslaunch px4 indoor1.launch
+
+cd ~/XTDrone/communication/
+python multirotor_communication.py iris 0
+
+cd ~/XTDrone/control/keyboard
+python multirotor_keyboard_control.py iris 1 vel
+
+cd ~/QGC
+./QGroundControl.AppImage
+
+cd ~/XTDrone/coordination/launch_generator
+python3 generator.py
+
+cp ~/XTDrone/coordination/launch_generator/multi_vehicle.launch ~/PX4_Firmware/launch/
