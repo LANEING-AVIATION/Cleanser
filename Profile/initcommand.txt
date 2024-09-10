@@ -1,12 +1,9 @@
 roscore
 
-cd ~/PX4_Firmware
-roslaunch px4 mavros_posix_sitl.launch
-
 rostopic echo /mavros/state
 
 cd ~/PX4_Firmware
-roslaunch px4 indoor1.launch
+roslaunch px4 outdoor1.launch
 
 cd ~/XTDrone/communication/
 python multirotor_communication.py iris 0
