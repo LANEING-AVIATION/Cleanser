@@ -63,35 +63,23 @@ def set_px4_mode(master, custom_mode, base_mode=mavutil.mavlink.MAV_MODE_FLAG_CU
     except Exception as e:
         print(f"模式切换失败: {str(e)}")
 
-
-def send_velocity_command(master, vx, vy, vz, duration):
-    start_time = time.time()
-    
-    while time.time() - start_time < duration:
-        # 发送SET_POSITION_TARGET_LOCAL_NED消息，使用速度控制（vx, vy, vz）
-        master.mav.set_position_target_local_ned_send(
-            0,  # 时间戳（自动设置为0）
+def set_px4_rc_channels(master, channels):
+    try:
+        print(f"尝试覆盖遥控器通道值: {channels}")
+        
+        # 发送遥控器通道覆盖命令
+        master.mav.rc_channels_override_send(
             master.target_system,  # 目标系统 ID
             master.target_component,  # 目标组件 ID
-            mavutil.mavlink.MAV_FRAME_LOCAL_NED,  # 使用局部NED坐标系
-            int(0b0000111111000111),  # 掩码，仅控制速度
-            0, 0, 0,  # 位置坐标 (这里不控制位置，所以置为0)
-            vx, vy, vz,  # 速度（X, Y, Z）
-            0, 0, 0,  # 不使用加速度控制
-            0, 0  # 不使用航向控制
+            *channels  # 遥控器通道值
         )
-        time.sleep(0.1)  # 每0.1秒发送一次速度指令
-    
-    # 停止发送速度，防止飞行器继续运动
-    master.mav.set_position_target_local_ned_send(
-        0, master.target_system, master.target_component,
-        mavutil.mavlink.MAV_FRAME_LOCAL_NED,  # 使用局部NED坐标系
-        int(0b0000111111000111),  # 掩码，仅控制速度
-        0, 0, 0,
-        0, 0, 0,  # 停止移动
-        0, 0, 0,
-        0, 0
-    )
+
+        # 等待一小段时间，检查命令是否发送成功
+        time.sleep(1)
+        print("遥控器通道值覆盖成功")
+
+    except Exception as e:
+        print(f"遥控器通道值覆盖失败: {str(e)}")
 
 
 # 主程序
@@ -106,11 +94,11 @@ if __name__ == "__main__":
                 # 切换模式
                 set_px4_mode(master, custom_mode=3)
 
-                time.sleep(5)
+                # 设置遥控器通道值，例如：通道1（roll），通道2（pitch），通道3（throttle），通道4（yaw）
+                channels = [1500, 1500, 1600, 1500, 0, 0, 0, 0]  # 这里的值可以根据需要调整
+                set_px4_rc_channels(master, channels)
 
-                set_px4_mode(master, custom_mode=6)
-                send_velocity_command(master, 0, 1, 0, 1)
-                time.sleep(5)
+                time.sleep(2)
 
                 set_px4_mode(master, custom_mode=4)
                 break
