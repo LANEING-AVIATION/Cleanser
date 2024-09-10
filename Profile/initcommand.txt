@@ -3,7 +3,7 @@ roscore
 rostopic echo /mavros/state
 
 cd ~/PX4_Firmware
-roslaunch px4 outdoor1.launch
+roslaunch px4 mavros_posix_sitl.launch
 
 cd ~/XTDrone/communication/
 python multirotor_communication.py iris 0
@@ -13,6 +13,8 @@ python multirotor_keyboard_control.py iris 1 vel
 
 cd ~/QGC
 ./QGroundControl.AppImage
+
+/iris/camera/image_raw
 
 cd ~/XTDrone/coordination/launch_generator
 python3 generator.py
