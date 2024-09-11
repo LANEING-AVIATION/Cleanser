@@ -11,7 +11,7 @@ surf(x, y, z, 'EdgeColor', 'none');  % 创建曲面图
 colormap(parula);  % 使用parula色图
 axis off;  % 隐藏坐标轴
 
-% 添加光照
+% 光照
 light('Position', [1 0 1], 'Style', 'infinite');
 lighting gouraud;
 
