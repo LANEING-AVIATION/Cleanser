@@ -95,15 +95,28 @@ if __name__ == "__main__":
                 print("飞控已进入模式 4，等待8秒后切换模式")
                 time.sleep(8)
                 # 切换模式
+                set_px4_mode(master, custom_mode=3)
                 set_px4_mode(master, custom_mode=6)
 
                 start_time = time.time()
                 duration = 4  # 发送持续时间为4秒
                 interval = 0.1  # 每次发送之间的间隔为0.1秒
-                roll, pitch, throttle, yaw = 2000, 2000, 2000, 2000  # 设置遥控通道的值
+                roll, pitch, throttle, yaw = 2, 2, 2, 2  # 设置遥控通道的值
 
                 while time.time() - start_time < duration:
+                    # 发送覆写指令
                     rc_channels_override(master, roll, pitch, throttle, yaw)
+
+                    # 获取飞控反馈的姿态信息
+                    msg = master.recv_match(type='ATTITUDE', blocking=True, timeout=1)
+                    if msg:
+                        roll_angle = msg.roll  # 横滚角度
+                        pitch_angle = msg.pitch  # 俯仰角度
+                        yaw_angle = msg.yaw  # 偏航角度
+                        print(f"飞控反馈 - 横滚: {roll_angle:.2f}, 俯仰: {pitch_angle:.2f}, 偏航: {yaw_angle:.2f}")
+                    else:
+                        print("未能获取飞控姿态反馈")
+
                     time.sleep(interval)  # 等待一小段时间后继续发送
 
                 time.sleep(2)
