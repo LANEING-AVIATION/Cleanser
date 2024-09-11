@@ -63,28 +63,6 @@ def set_px4_mode(master, custom_mode, base_mode=mavutil.mavlink.MAV_MODE_FLAG_CU
     except Exception as e:
         print(f"模式切换失败: {str(e)}")
 
-def rc_channels_override(master, roll, pitch, throttle, yaw):
-    """
-    覆写遥控器的通道信号
-    roll: 横滚通道 (通道 1)
-    pitch: 俯仰通道 (通道 2)
-    throttle: 油门通道 (通道 3)
-    yaw: 偏航通道 (通道 4)
-    """
-    master.mav.rc_channels_override_send(
-        master.target_system,
-        master.target_component,
-        roll,      # 通道 1: 横滚 (roll)
-        pitch,     # 通道 2: 俯仰 (pitch)
-        throttle,  # 通道 3: 油门 (throttle)
-        yaw,       # 通道 4: 偏航 (yaw)
-        65535,     # 通道 5: 保持默认 (65535 表示不覆写)
-        65535,     # 通道 6: 保持默认
-        65535,     # 通道 7: 保持默认
-        65535      # 通道 8: 保持默认
-    )
-    print(f"覆写通道信号: 横滚={roll}, 俯仰={pitch}, 油门={throttle}, 偏航={yaw}")
-
 # 主程序
 if __name__ == "__main__":
     master = connect()
@@ -96,28 +74,8 @@ if __name__ == "__main__":
                 time.sleep(8)
                 # 切换模式
                 set_px4_mode(master, custom_mode=3)
-                set_px4_mode(master, custom_mode=6)
 
-                start_time = time.time()
-                duration = 4  # 发送持续时间为4秒
-                interval = 0.1  # 每次发送之间的间隔为0.1秒
-                roll, pitch, throttle, yaw = 2, 2, 2, 2  # 设置遥控通道的值
-
-                while time.time() - start_time < duration:
-                    # 发送覆写指令
-                    rc_channels_override(master, roll, pitch, throttle, yaw)
-
-                    # 获取飞控反馈的姿态信息
-                    msg = master.recv_match(type='ATTITUDE', blocking=True, timeout=1)
-                    if msg:
-                        roll_angle = msg.roll  # 横滚角度
-                        pitch_angle = msg.pitch  # 俯仰角度
-                        yaw_angle = msg.yaw  # 偏航角度
-                        print(f"飞控反馈 - 横滚: {roll_angle:.2f}, 俯仰: {pitch_angle:.2f}, 偏航: {yaw_angle:.2f}")
-                    else:
-                        print("未能获取飞控姿态反馈")
-
-                    time.sleep(interval)  # 等待一小段时间后继续发送
+                #修改这里的代码，插入waypoint飞向经纬度(200，200)
 
                 time.sleep(2)
 
