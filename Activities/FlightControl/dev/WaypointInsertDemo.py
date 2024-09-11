@@ -63,24 +63,27 @@ def set_px4_mode(master, custom_mode, base_mode=mavutil.mavlink.MAV_MODE_FLAG_CU
     except Exception as e:
         print(f"模式切换失败: {str(e)}")
 
-def set_px4_rc_channels(master, channels):
-    try:
-        print(f"尝试覆盖遥控器通道值: {channels}")
-        
-        # 发送遥控器通道覆盖命令
-        master.mav.rc_channels_override_send(
-            master.target_system,  # 目标系统 ID
-            master.target_component,  # 目标组件 ID
-            *channels  # 遥控器通道值
-        )
-
-        # 等待一小段时间，检查命令是否发送成功
-        time.sleep(1)
-        print("遥控器通道值覆盖成功")
-
-    except Exception as e:
-        print(f"遥控器通道值覆盖失败: {str(e)}")
-
+def rc_channels_override(master, roll, pitch, throttle, yaw):
+    """
+    覆写遥控器的通道信号
+    roll: 横滚通道 (通道 1)
+    pitch: 俯仰通道 (通道 2)
+    throttle: 油门通道 (通道 3)
+    yaw: 偏航通道 (通道 4)
+    """
+    master.mav.rc_channels_override_send(
+        master.target_system,
+        master.target_component,
+        roll,      # 通道 1: 横滚 (roll)
+        pitch,     # 通道 2: 俯仰 (pitch)
+        throttle,  # 通道 3: 油门 (throttle)
+        yaw,       # 通道 4: 偏航 (yaw)
+        65535,     # 通道 5: 保持默认 (65535 表示不覆写)
+        65535,     # 通道 6: 保持默认
+        65535,     # 通道 7: 保持默认
+        65535      # 通道 8: 保持默认
+    )
+    print(f"覆写通道信号: 横滚={roll}, 俯仰={pitch}, 油门={throttle}, 偏航={yaw}")
 
 # 主程序
 if __name__ == "__main__":
@@ -92,11 +95,16 @@ if __name__ == "__main__":
                 print("飞控已进入模式 4，等待8秒后切换模式")
                 time.sleep(8)
                 # 切换模式
-                set_px4_mode(master, custom_mode=3)
+                set_px4_mode(master, custom_mode=6)
 
-                # 设置遥控器通道值，例如：通道1（roll），通道2（pitch），通道3（throttle），通道4（yaw）
-                channels = [1500, 1500, 1600, 1500, 0, 0, 0, 0]  # 这里的值可以根据需要调整
-                set_px4_rc_channels(master, channels)
+                start_time = time.time()
+                duration = 4  # 发送持续时间为4秒
+                interval = 0.1  # 每次发送之间的间隔为0.1秒
+                roll, pitch, throttle, yaw = 2000, 2000, 2000, 2000  # 设置遥控通道的值
+
+                while time.time() - start_time < duration:
+                    rc_channels_override(master, roll, pitch, throttle, yaw)
+                    time.sleep(interval)  # 等待一小段时间后继续发送
 
                 time.sleep(2)
 
