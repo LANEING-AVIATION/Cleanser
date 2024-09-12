@@ -75,7 +75,7 @@ if __name__ == "__main__":
                 # 切换模式
                 set_px4_mode(master, custom_mode=3)
 
-                #在这里模拟遥控器，让飞机向右飞一些
+                #在这里想切offboard
 
                 time.sleep(2)
 
