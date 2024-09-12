@@ -1,5 +1,5 @@
-git config --global http.proxy http://10.234.108.109:7890
-git config --global https.proxy https://10.234.108.109:7890
+git config --global http.proxy http://10.238.31.36:7890
+git config --global https.proxy https://10.238.31.35:7890
 
 git config --global --unset http.proxy
 git config --global --unset https.proxy
@@ -8,15 +8,15 @@ mkdir -p ~/.pip
 nano ~/.pip/pip.conf
 
 proxy_servers:
-  https: http://10.234.108.109:7890
-  http: http://10.234.108.109:7890
+  https: http://10.238.31.36:7890
+  http: http://10.238.31.36:7890
   
 
 nano ~/.bashrc
-export http_proxy="http://10.234.108.109:7890"
-export https_proxy="http://10.234.108.109:7890"
+export http_proxy="http://10.238.31.36:7890"
+export https_proxy="http://10.238.31.36:7890"
 source ~/.bashrc
 
 
-pip install <package_name> --proxy http://10.234.108.109:7890
+pip install <package_name> --proxy http://10.238.31.36:7890
 

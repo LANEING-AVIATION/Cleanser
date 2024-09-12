@@ -63,25 +63,6 @@ def set_px4_mode(master, custom_mode, base_mode=mavutil.mavlink.MAV_MODE_FLAG_CU
     except Exception as e:
         print(f"模式切换失败: {str(e)}")
 
-def set_px4_rc_channels(master, channels):
-    try:
-        print(f"尝试覆盖遥控器通道值: {channels}")
-        
-        # 发送遥控器通道覆盖命令
-        master.mav.rc_channels_override_send(
-            master.target_system,  # 目标系统 ID
-            master.target_component,  # 目标组件 ID
-            *channels  # 遥控器通道值
-        )
-
-        # 等待一小段时间，检查命令是否发送成功
-        time.sleep(1)
-        print("遥控器通道值覆盖成功")
-
-    except Exception as e:
-        print(f"遥控器通道值覆盖失败: {str(e)}")
-
-
 # 主程序
 if __name__ == "__main__":
     master = connect()
@@ -94,9 +75,7 @@ if __name__ == "__main__":
                 # 切换模式
                 set_px4_mode(master, custom_mode=3)
 
-                # 设置遥控器通道值，例如：通道1（roll），通道2（pitch），通道3（throttle），通道4（yaw）
-                channels = [1500, 1500, 1600, 1500, 0, 0, 0, 0]  # 这里的值可以根据需要调整
-                set_px4_rc_channels(master, channels)
+                #在这里想切offboard
 
                 time.sleep(2)
 
