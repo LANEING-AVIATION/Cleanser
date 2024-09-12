@@ -75,7 +75,7 @@ if __name__ == "__main__":
                 # 切换模式
                 set_px4_mode(master, custom_mode=3)
 
-                #修改这里的代码，插入waypoint飞向经纬度(200，200)
+                #在这里模拟遥控器，让飞机向右飞一些
 
                 time.sleep(2)
 
