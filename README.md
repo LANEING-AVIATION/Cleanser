@@ -20,6 +20,9 @@ Now, I seem to have found a better approach. I’ve installed all MATLAB functio
 
 So far, my three major extracurricular achievements this term have been: ACM programming, drone simulations, and MATLAB learning. I believe accomplishing 4-6 areas by the end of this term would be quite satisfactory.
 
+### Powershell
+“[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("5LiA5o6Q6ISW5a2Q57+755m955y877yM5LiA5p2+5omL5bCx5ZC554mb6YC8"))”
+
 ### Schedule
 
 - **Programming Days:** Every Monday and Wednesday
