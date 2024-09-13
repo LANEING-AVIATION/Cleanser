@@ -6,6 +6,23 @@ Welcome to **Cleanser**, a repository that marks the inception of LANEING AVIATI
 
 **Cleanser** is more than just a project; it's a pursuit of coding excellence, democracy, and peace. Our first phase revolves around structured learning and hands-on programming sessions.
 
+### Update Sept 13th
+
+Over the past few weeks, this project has made substantial progress. Currently, our work encompasses four key components: C++ Algorithm ACM Development, Flight Control Simulation, MATLAB Mathematical Modeling, and Classroom Notes. The first three are particularly meaningful extracurricular activities. I will soon dive deeper into MATLAB programming as the next phase of my journey.
+
+C++ programming was abandoned after the first class. It was initially something I had long committed to, and I hoped to improve in that area. However, it turned out to be rather dull and failed to spark my interest. What I truly enjoy often requires a vast number of dependencies and a complex toolchain, something the monotonous nature of C++ algorithm development simply can't offer. In my opinion, the best learning approach is fragmented and dynamic, not obsessing over a single task. Of course, this doesn't mean jumping between topics without focus.
+
+Flight control simulation, on the other hand, has been a highly rewarding activity, with significant progress—I've completed over 300 flight tests. But now, I've hit a bottleneck. The virtual machine I'm using struggles to leverage GPU resources directly, which causes severe strain on system resources during simulations, sometimes even breaking the connection. The environment setup is also quite complicated, involving communication between various programs, including those outside of Windows or within a WSL backend. This exacerbates the resource issue even further. I use Power Automate to maintain my campus network login, but to my surprise, even this automation script consumes a considerable amount of CPU and memory. 
+
+At some point, I hope to return to the drone control domain, but for now, it's time for a change of pace. MATLAB, by contrast, is proving to be quite enjoyable. I've explored MATLAB in various forms—on a Windows PC, on Android, through the Web version, and even via remote desktop access. However, I've found that the Windows version takes up too much storage space, which isn't ideal. The Android version is little more than a command line interface, which I found quite uninspiring. The Web version, while convenient, suffers from occasional lag and presents challenges with file management—particularly with Git integration. I had to construct a convoluted solution to sync OneDrive with my Git repository, which became tedious.
+
+Now, I seem to have found a better approach. I’ve installed all MATLAB functionalities on my Ubuntu virtual machine, the same one I use for drone simulations (which also hosts my repository), and I access it via remote desktop. I think this is a solid choice, and it's probably time to uninstall the Windows version since I don’t foresee needing it for the moment. I'll focus on working through some MATLAB textbooks for now. That should keep me occupied for a good while.
+
+So far, my three major extracurricular achievements this term have been: ACM programming, drone simulations, and MATLAB learning. I believe accomplishing 4-6 areas by the end of this term would be quite satisfactory.
+
+### Powershell
+“[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("5LiA5o6Q6ISW5a2Q57+755m955y877yM5LiA5p2+5omL5bCx5ZC554mb6YC8"))”
+
 ### Schedule
 
 - **Programming Days:** Every Monday and Wednesday
