@@ -1,0 +1,3 @@
+options=optimset;
+[x,y]=fmincon('example2_7_1',rand(2,1),[],[],[],[],zeros(2,1),[],...
+'example2_7_2',options)
