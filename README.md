@@ -6,6 +6,13 @@ Welcome to **Cleanser**, a repository that marks the inception of LANEING AVIATI
 
 **Cleanser** is more than just a project; it's a pursuit of coding excellence, democracy, and peace. Our first phase revolves around structured learning and hands-on programming sessions.
 
+### Toolchain
+**Cx Studio**
+**VMware + Pixhawk SITL + Teamviewer**
+**VMware + MATLAB + Teamviewer**
+**MATLAB Online + MATLAB Mobile**
+**WSL + VSCode Tunnel**
+
 ### Update Sept 13th
 
 Over the past few weeks, this project has made substantial progress. Currently, our work encompasses four key components: C++ Algorithm ACM Development, Flight Control Simulation, MATLAB Mathematical Modeling, and Classroom Notes. The first three are particularly meaningful extracurricular activities. I will soon dive deeper into MATLAB programming as the next phase of my journey.
@@ -19,9 +26,6 @@ At some point, I hope to return to the drone control domain, but for now, it's t
 Now, I seem to have found a better approach. I’ve installed all MATLAB functionalities on my Ubuntu virtual machine, the same one I use for drone simulations (which also hosts my repository), and I access it via remote desktop. I think this is a solid choice, and it's probably time to uninstall the Windows version since I don’t foresee needing it for the moment. I'll focus on working through some MATLAB textbooks for now. That should keep me occupied for a good while.
 
 So far, my three major extracurricular achievements this term have been: ACM programming, drone simulations, and MATLAB learning. I believe accomplishing 4-6 areas by the end of this term would be quite satisfactory.
-
-### Powershell
-“[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("5LiA5o6Q6ISW5a2Q57+755m955y877yM5LiA5p2+5omL5bCx5ZC554mb6YC8"))”
 
 ### Schedule
 
