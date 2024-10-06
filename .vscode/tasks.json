@@ -1,26 +1,22 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "docker-build",
-			"label": "docker-build",
-			"platform": "python",
-			"dockerBuild": {
-				"tag": "cleanser:latest",
-				"dockerfile": "${workspaceFolder}/Dockerfile",
-				"context": "${workspaceFolder}",
-				"pull": true
-			}
-		},
-		{
-			"type": "docker-run",
-			"label": "docker-run: debug",
-			"dependsOn": [
-				"docker-build"
-			],
-			"python": {
-				"module": "LANEING"
-			}
-		}
-	]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task to build C++ files"
+        }
+    ]
 }
