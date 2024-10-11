@@ -1,0 +1,30 @@
+MODEL:
+SETS:
+  WAREHOUSES /W1..W4/: SUPPLY;
+  CUSTOMERS /C1..C5/: DEMAND;
+  ROUTES(WAREHOUSES,CUSTOMERS): COST, SHIP;
+ENDSETS
+
+DATA:
+  SUPPLY = 20 30 25 35;
+  DEMAND = 10 15 25 30 30;
+  COST = 8 6 10 9 7
+         9 12 13 7 6
+         14 9 16 5 8
+         12 8 7 6 9;
+ENDDATA
+
+!Minimize total shipping cost;
+MIN = @SUM(ROUTES: COST * SHIP);
+
+!Supply constraints;
+@FOR(WAREHOUSES(I): 
+  @SUM(CUSTOMERS(J): SHIP(I,J)) <= SUPPLY(I)
+);
+
+!Demand constraints;
+@FOR(CUSTOMERS(J): 
+  @SUM(WAREHOUSES(I): SHIP(I,J)) >= DEMAND(J)
+);
+
+END
