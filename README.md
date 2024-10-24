@@ -58,18 +58,19 @@
 **ANSYS Simulation**
 
 - Learn ANSYS Fluent through tutorials.
-- (TeamViewer + ANSYS Workbench) (4080 workstation)
+- (RDP + ANSYS Workbench) (4080 workstation)
 
 **ABAQUS Simulation**
 
 - Learn ABAQUS.
-- (TeamViewer + ABAQUS) (4080 workstation)
+- (RDP + ABAQUS) (4080 workstation)
 
 **Flight Control Pro: Graphic Docker**
 
 - Build a software-in-the-loop (SITL) environment on high-cost remote devices.
-- (TeamViewer + Pixhawk)
+- (RDP + Pixhawk)
+- 
+**Video Clipping**
 
----
-
-Let me know if you need any changes!
+- Make films.
+- (Todesk + Capcut)
