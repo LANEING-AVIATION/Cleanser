@@ -1,0 +1,1 @@
+wsl -d LANEING -e bash -c "cd /home/laneing/MATLAB/bin && ./matlab"

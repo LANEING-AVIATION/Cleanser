@@ -18,8 +18,8 @@ def rossler_system(t, Y):
 
 # 初始条件和时间跨度
 initial_conditions = [1, 0, 0]
-t_span = (0, 100)   # 模拟时间范围
-t_eval = np.linspace(t_span[0], t_span[1], 10000)  # 为绘图设置时间点
+t_span = (0, 10)   # 模拟时间范围
+t_eval = np.linspace(t_span[0], t_span[1], 100)  # 为绘图设置时间点
 
 # 求解微分方程组
 solution = solve_ivp(rossler_system, t_span, initial_conditions, t_eval=t_eval)
@@ -36,5 +36,5 @@ ax.plot(x, y, z, lw=0.5)
 ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_zlabel('z')
-ax.set_title('Rossler系统的三维相图')
+ax.set_title('Rossler')
 plt.show()
