@@ -1,0 +1,177 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "vendor/llama.cpp/examples/llava/libllava.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"llama_cpp_python_install_target",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"vendor/llama.cpp/examples/llava/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 113,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 9,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 17,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "ggml::@0330b3df5fef7ab8cd13"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "llama::@861f781b9061fea4400e"
+		},
+		{
+			"id" : "llava::@90e36de4706d2acacc8e"
+		}
+	],
+	"id" : "llava_shared::@90e36de4706d2acacc8e",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 5,
+				"path" : "/mnt/d/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/llama_cpp/lib"
+			},
+			{
+				"backtrace" : 5,
+				"path" : "/mnt/d/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/llama_cpp/lib"
+			},
+			{
+				"backtrace" : 6,
+				"path" : "/llama_cpp/lib"
+			},
+			{
+				"backtrace" : 6,
+				"path" : "/llama_cpp/lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,\"\\$$ORIGIN\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "../../src/libllama.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "../../ggml/src/libggml.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "llava_shared",
+	"nameOnDisk" : "libllava.so",
+	"paths" : 
+	{
+		"build" : "vendor/llama.cpp/examples/llava",
+		"source" : "vendor/llama.cpp/examples/llava"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/mnt/d/GitHubRepo/LANEING/Cleanser/build/vendor/llama.cpp/examples/llava/CMakeFiles/llava.dir/llava.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/mnt/d/GitHubRepo/LANEING/Cleanser/build/vendor/llama.cpp/examples/llava/CMakeFiles/llava.dir/clip.cpp.o",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.o CMakeFiles/llava.dir/llava.cpp.o CMakeFiles/llava.dir/clip.cpp.o -o llama-minicpmv-cli  -Wl,-rpath,/mnt/d/GitHubRepo/LANEING/Cleanser/build/vendor/llama.cpp/src:/mnt/d/GitHubRepo/LANEING/Cleanser/build/vendor/llama.cpp/ggml/src: ../../common/libcommon.a ../../src/libllama.so ../../ggml/src/libggml.so 

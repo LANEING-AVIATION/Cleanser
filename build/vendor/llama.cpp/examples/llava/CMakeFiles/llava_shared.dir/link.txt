@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -g -shared -Wl,-soname,libllava.so -o libllava.so CMakeFiles/llava.dir/llava.cpp.o CMakeFiles/llava.dir/clip.cpp.o  -Wl,-rpath,"\$ORIGIN" ../../src/libllama.so ../../ggml/src/libggml.so 

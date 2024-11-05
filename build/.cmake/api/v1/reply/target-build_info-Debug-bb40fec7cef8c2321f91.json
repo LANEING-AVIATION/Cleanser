@@ -1,0 +1,89 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "vendor/llama.cpp/common/CMakeFiles/build_info.dir/build-info.cpp.o"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library"
+		],
+		"files" : 
+		[
+			"vendor/llama.cpp/common/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fPIC"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "build_info::@d14b5fb263c3b1bdf3c0",
+	"name" : "build_info",
+	"paths" : 
+	{
+		"build" : "vendor/llama.cpp/common",
+		"source" : "vendor/llama.cpp/common"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "vendor/llama.cpp/common/build-info.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "vendor/llama.cpp/common/build-info.cpp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}
