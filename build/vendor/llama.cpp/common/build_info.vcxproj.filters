@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\GitHubRepo\LANEING\Cleanser\Activities\Intelligence\llama-cpp-python\vendor\llama.cpp\common\build-info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\GitHubRepo\LANEING\Cleanser\build\CMakeFiles\258db6d30b9edc8cefd94b9eb392b6dc\build-info.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GitHubRepo\LANEING\Cleanser\Activities\Intelligence\llama-cpp-python\vendor\llama.cpp\common\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9F09539D-A26F-37F6-B01C-91A211FC1157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E722C885-0711-3ACA-AD27-09554D3D605D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

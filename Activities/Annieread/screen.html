@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>屏幕共享</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #videoElement {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* 保持屏幕内容比例，填充窗口 */
+        }
+    </style>
+</head>
+<body>
+    <video id="videoElement" autoplay muted></video>
+
+    <script>
+        const videoElement = document.getElementById('videoElement');
+
+        // 点击任意区域触发屏幕共享
+        document.body.addEventListener('click', async () => {
+            try {
+                // 请求屏幕共享权限
+                const stream = await navigator.mediaDevices.getDisplayMedia({
+                    video: {
+                        cursor: "always" // 启用鼠标指针显示
+                    }
+                });
+                // 将屏幕共享的流绑定到视频元素
+                videoElement.srcObject = stream;
+
+                // 确保视频充满窗口
+                videoElement.style.objectFit = 'contain';
+            } catch (err) {
+                console.error("获取屏幕共享失败: ", err);
+                alert("无法获取屏幕共享，请重试！");
+            }
+        });
+    </script>
+</body>
+</html>

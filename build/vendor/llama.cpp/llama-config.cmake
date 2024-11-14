@@ -96,8 +96,8 @@ find_library(llama_LIBRARY llama
     REQUIRED
     HINTS ${LLAMA_LIB_DIR})
 
-set(_llama_link_deps "${ggml_LIBRARY}" "Threads::Threads;OpenMP::OpenMP_C;OpenMP::OpenMP_CXX;/usr/lib/x86_64-linux-gnu/libm.so")
-set(_llama_transient_defines "GGML_SHARED;GGML_BUILD;GGML_SCHED_MAX_COPIES=4;$<$<CONFIG:Debug>:_GLIBCXX_ASSERTIONS>;GGML_USE_OPENMP;GGML_USE_LLAMAFILE;_XOPEN_SOURCE=600;_GNU_SOURCE")
+set(_llama_link_deps "${ggml_LIBRARY}" "Threads::Threads;OpenMP::OpenMP_C;OpenMP::OpenMP_CXX")
+set(_llama_transient_defines "GGML_SHARED;GGML_BUILD;_CRT_SECURE_NO_WARNINGS;GGML_SCHED_MAX_COPIES=4;GGML_USE_OPENMP;GGML_USE_LLAMAFILE;_XOPEN_SOURCE=600;_CRT_SECURE_NO_WARNINGS")
 
 add_library(llama UNKNOWN IMPORTED)
 

@@ -1,0 +1,487 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/Release/ggml.dll"
+		},
+		{
+			"path" : "vendor/llama.cpp/ggml/src/Release/ggml.lib"
+		},
+		{
+			"path" : "bin/Release/ggml.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"llama_cpp_python_install_target",
+			"add_compile_options",
+			"target_link_libraries",
+			"target_compile_definitions",
+			"add_compile_definitions",
+			"target_include_directories",
+			"target_compile_features"
+		],
+		"files" : 
+		[
+			"vendor/llama.cpp/ggml/src/CMakeLists.txt",
+			"vendor/llama.cpp/ggml/CMakeLists.txt",
+			"CMakeLists.txt",
+			"vendor/llama.cpp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1298,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 224,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 227,
+				"parent" : 2
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 74,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 9,
+				"parent" : 6
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 17,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1216,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 1331,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1342,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 259,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 158,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 46,
+				"parent" : 15
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1242,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1326,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1327,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 1329,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1215,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-openmp"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 11,
+					"define" : "GGML_BUILD"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "GGML_SCHED_MAX_COPIES=4"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "GGML_SHARED"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "GGML_USE_LLAMAFILE"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "GGML_USE_OPENMP"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "_XOPEN_SOURCE=600"
+				},
+				{
+					"define" : "ggml_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 18,
+					"path" : "D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/vendor/llama.cpp/ggml/src/../include"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/vendor/llama.cpp/ggml/src/."
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					20
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				3,
+				4,
+				5,
+				6,
+				10
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MD"
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-openmp"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 11,
+					"define" : "GGML_BUILD"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "GGML_SCHED_MAX_COPIES=4"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "GGML_SHARED"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "GGML_USE_LLAMAFILE"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "GGML_USE_OPENMP"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "_XOPEN_SOURCE=600"
+				},
+				{
+					"define" : "ggml_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 18,
+					"path" : "D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/vendor/llama.cpp/ggml/src/../include"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/vendor/llama.cpp/ggml/src/."
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				8
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ggml::@0330b3df5fef7ab8cd13",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 3,
+				"path" : "bin"
+			},
+			{
+				"backtrace" : 4,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 4,
+				"path" : "bin"
+			},
+			{
+				"backtrace" : 7,
+				"path" : "D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/llama_cpp/lib"
+			},
+			{
+				"backtrace" : 7,
+				"path" : "D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/llama_cpp/lib"
+			},
+			{
+				"backtrace" : 8,
+				"path" : "/llama_cpp/lib"
+			},
+			{
+				"backtrace" : 8,
+				"path" : "/llama_cpp/lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Program Files/llama_cpp"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /INCREMENTAL:NO",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/DEF:ggml.dir\\Release\\exports.def",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "ggml",
+	"nameOnDisk" : "ggml.dll",
+	"paths" : 
+	{
+		"build" : "vendor/llama.cpp/ggml/src",
+		"source" : "vendor/llama.cpp/ggml/src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				7,
+				9,
+				11
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				3,
+				4,
+				5,
+				6,
+				8,
+				10
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "vendor/llama.cpp/ggml/include/ggml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/llama.cpp/ggml/include/ggml-alloc.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/llama.cpp/ggml/include/ggml-backend.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/llama.cpp/ggml/src/ggml.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/llama.cpp/ggml/src/ggml-alloc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/llama.cpp/ggml/src/ggml-backend.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/llama.cpp/ggml/src/ggml-quants.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/llama.cpp/ggml/src/ggml-quants.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "vendor/llama.cpp/ggml/src/llamafile/sgemm.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/llama.cpp/ggml/src/llamafile/sgemm.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/llama.cpp/ggml/src/ggml-aarch64.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/llama.cpp/ggml/src/ggml-aarch64.h",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

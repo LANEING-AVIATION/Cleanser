@@ -1,0 +1,60 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ggml::@0330b3df5fef7ab8cd13"
+		},
+		{
+			"id" : "llama::@861f781b9061fea4400e"
+		},
+		{
+			"id" : "build_info::@d14b5fb263c3b1bdf3c0"
+		},
+		{
+			"id" : "common::@d14b5fb263c3b1bdf3c0"
+		},
+		{
+			"id" : "llava::@90e36de4706d2acacc8e"
+		},
+		{
+			"id" : "llava_static::@90e36de4706d2acacc8e"
+		},
+		{
+			"id" : "llama-minicpmv-cli::@90e36de4706d2acacc8e"
+		},
+		{
+			"id" : "llava_shared::@90e36de4706d2acacc8e"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "llama-llava-cli::@90e36de4706d2acacc8e"
+		}
+	],
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
