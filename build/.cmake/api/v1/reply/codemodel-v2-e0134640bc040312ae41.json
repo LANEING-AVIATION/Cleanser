@@ -1,0 +1,1172 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-9d191ff093c18e3746e6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp",
+					"childIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.llama.cpp-Debug-a3c730c23a15aad516be.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "vendor/llama.cpp",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/ggml",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.llama.cpp.ggml-Debug-12fc7adeb85f1aee0865.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "vendor/llama.cpp/ggml",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/ggml/src",
+					"jsonFile" : "directory-vendor.llama.cpp.ggml.src-Debug-6caf0a57ab14f19a06e7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "vendor/llama.cpp/ggml/src",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/src",
+					"jsonFile" : "directory-vendor.llama.cpp.src-Debug-51a83f5efa36f4199407.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "vendor/llama.cpp/src",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/common",
+					"jsonFile" : "directory-vendor.llama.cpp.common-Debug-f0ac8107283ad5578700.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "vendor/llama.cpp/common",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/examples/llava",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.llama.cpp.examples.llava-Debug-5a7124afbff304572989.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "vendor/llama.cpp/examples/llava",
+					"targetIndexes" : 
+					[
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						6
+					],
+					"name" : "llama_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						4,
+						5
+					],
+					"name" : "llama.cpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "ggml",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-994b10e39a8ea2fa0676.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@81b0c84777fd46238cf1",
+					"jsonFile" : "target-ALL_BUILD-Debug-7c56726939cdadc4e274.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@72c1b9c3ecbaa5c3e176",
+					"jsonFile" : "target-ALL_BUILD-Debug-3a649ffec392261ecefc.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-a416942e6031f8d9b6bf.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "build_info::@d14b5fb263c3b1bdf3c0",
+					"jsonFile" : "target-build_info-Debug-c33ae3e331966e662e87.json",
+					"name" : "build_info",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "common::@d14b5fb263c3b1bdf3c0",
+					"jsonFile" : "target-common-Debug-6c4c0295429181588d30.json",
+					"name" : "common",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml::@0330b3df5fef7ab8cd13",
+					"jsonFile" : "target-ggml-Debug-5ccece9f0387f0bedd69.json",
+					"name" : "ggml",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "llama::@861f781b9061fea4400e",
+					"jsonFile" : "target-llama-Debug-fbfe2a91b376a1ca7796.json",
+					"name" : "llama",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llama-llava-cli::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llama-llava-cli-Debug-fcb969e070c7ff075b38.json",
+					"name" : "llama-llava-cli",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llama-minicpmv-cli::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llama-minicpmv-cli-Debug-2689926545f914cfec5c.json",
+					"name" : "llama-minicpmv-cli",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llava::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llava-Debug-dbd60278550deb81b92a.json",
+					"name" : "llava",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llava_shared::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llava_shared-Debug-d65b48c140b9dd19c352.json",
+					"name" : "llava_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llava_static::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llava_static-Debug-0d20f0f660034cff656e.json",
+					"name" : "llava_static",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-680b4ad1dbb17c1ec816.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp",
+					"childIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.llama.cpp-Release-2fe781fca366f74920ae.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "vendor/llama.cpp",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/ggml",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.llama.cpp.ggml-Release-132207c4144e904f5cb0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "vendor/llama.cpp/ggml",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/ggml/src",
+					"jsonFile" : "directory-vendor.llama.cpp.ggml.src-Release-6caf0a57ab14f19a06e7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "vendor/llama.cpp/ggml/src",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/src",
+					"jsonFile" : "directory-vendor.llama.cpp.src-Release-51a83f5efa36f4199407.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "vendor/llama.cpp/src",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/common",
+					"jsonFile" : "directory-vendor.llama.cpp.common-Release-f0ac8107283ad5578700.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "vendor/llama.cpp/common",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/examples/llava",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.llama.cpp.examples.llava-Release-caf100aafb2ef04a5082.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "vendor/llama.cpp/examples/llava",
+					"targetIndexes" : 
+					[
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						6
+					],
+					"name" : "llama_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						4,
+						5
+					],
+					"name" : "llama.cpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "ggml",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-994b10e39a8ea2fa0676.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@81b0c84777fd46238cf1",
+					"jsonFile" : "target-ALL_BUILD-Release-7c56726939cdadc4e274.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@72c1b9c3ecbaa5c3e176",
+					"jsonFile" : "target-ALL_BUILD-Release-3a649ffec392261ecefc.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-a416942e6031f8d9b6bf.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "build_info::@d14b5fb263c3b1bdf3c0",
+					"jsonFile" : "target-build_info-Release-1f600f8aed4f532bf480.json",
+					"name" : "build_info",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "common::@d14b5fb263c3b1bdf3c0",
+					"jsonFile" : "target-common-Release-6618f0581a5263e2bc64.json",
+					"name" : "common",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml::@0330b3df5fef7ab8cd13",
+					"jsonFile" : "target-ggml-Release-98262bb4707e1451577f.json",
+					"name" : "ggml",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "llama::@861f781b9061fea4400e",
+					"jsonFile" : "target-llama-Release-5d29da88d1f10f32a228.json",
+					"name" : "llama",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llama-llava-cli::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llama-llava-cli-Release-b37f23a57ed1a8fc028d.json",
+					"name" : "llama-llava-cli",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llama-minicpmv-cli::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llama-minicpmv-cli-Release-c4f626518e0c61e8b341.json",
+					"name" : "llama-minicpmv-cli",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llava::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llava-Release-6b90ef98ca082625c0bc.json",
+					"name" : "llava",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llava_shared::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llava_shared-Release-16f616c25543f4234c49.json",
+					"name" : "llava_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llava_static::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llava_static-Release-0ac923ff1a8dc02eca3d.json",
+					"name" : "llava_static",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-96f7a0cd171588d89de8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp",
+					"childIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.llama.cpp-MinSizeRel-991a3ce2e3ae01b72b63.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "vendor/llama.cpp",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/ggml",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.llama.cpp.ggml-MinSizeRel-357c5c908d797683576b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "vendor/llama.cpp/ggml",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/ggml/src",
+					"jsonFile" : "directory-vendor.llama.cpp.ggml.src-MinSizeRel-6caf0a57ab14f19a06e7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "vendor/llama.cpp/ggml/src",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/src",
+					"jsonFile" : "directory-vendor.llama.cpp.src-MinSizeRel-51a83f5efa36f4199407.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "vendor/llama.cpp/src",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/common",
+					"jsonFile" : "directory-vendor.llama.cpp.common-MinSizeRel-f0ac8107283ad5578700.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "vendor/llama.cpp/common",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/examples/llava",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.llama.cpp.examples.llava-MinSizeRel-d6305f7403e26d1631e1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "vendor/llama.cpp/examples/llava",
+					"targetIndexes" : 
+					[
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						6
+					],
+					"name" : "llama_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						4,
+						5
+					],
+					"name" : "llama.cpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "ggml",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-994b10e39a8ea2fa0676.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@81b0c84777fd46238cf1",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-7c56726939cdadc4e274.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@72c1b9c3ecbaa5c3e176",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-3a649ffec392261ecefc.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-a416942e6031f8d9b6bf.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "build_info::@d14b5fb263c3b1bdf3c0",
+					"jsonFile" : "target-build_info-MinSizeRel-851b9888f6099700aef3.json",
+					"name" : "build_info",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "common::@d14b5fb263c3b1bdf3c0",
+					"jsonFile" : "target-common-MinSizeRel-0b7fb86b97de399a0c80.json",
+					"name" : "common",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml::@0330b3df5fef7ab8cd13",
+					"jsonFile" : "target-ggml-MinSizeRel-02e2ea3345a377042950.json",
+					"name" : "ggml",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "llama::@861f781b9061fea4400e",
+					"jsonFile" : "target-llama-MinSizeRel-9a0d907fef3e20bf94cc.json",
+					"name" : "llama",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llama-llava-cli::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llama-llava-cli-MinSizeRel-7ade3ded8fbb2311e25b.json",
+					"name" : "llama-llava-cli",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llama-minicpmv-cli::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llama-minicpmv-cli-MinSizeRel-b7aac7d7888496f661be.json",
+					"name" : "llama-minicpmv-cli",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llava::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llava-MinSizeRel-0a589fd299985944a7b6.json",
+					"name" : "llava",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llava_shared::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llava_shared-MinSizeRel-f75745c1d148efa8093f.json",
+					"name" : "llava_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llava_static::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llava_static-MinSizeRel-6ed1c87aac89b24cc607.json",
+					"name" : "llava_static",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-c25e6eff90bbdbd9d3b1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp",
+					"childIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.llama.cpp-RelWithDebInfo-e5dd9102588312c21c67.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "vendor/llama.cpp",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/ggml",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.llama.cpp.ggml-RelWithDebInfo-b02c8152fd2d059b3ec3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "vendor/llama.cpp/ggml",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/ggml/src",
+					"jsonFile" : "directory-vendor.llama.cpp.ggml.src-RelWithDebInfo-6caf0a57ab14f19a06e7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "vendor/llama.cpp/ggml/src",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/src",
+					"jsonFile" : "directory-vendor.llama.cpp.src-RelWithDebInfo-51a83f5efa36f4199407.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "vendor/llama.cpp/src",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/common",
+					"jsonFile" : "directory-vendor.llama.cpp.common-RelWithDebInfo-f0ac8107283ad5578700.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "vendor/llama.cpp/common",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "vendor/llama.cpp/examples/llava",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.llama.cpp.examples.llava-RelWithDebInfo-eca38422903abcaad0ea.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "vendor/llama.cpp/examples/llava",
+					"targetIndexes" : 
+					[
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						6
+					],
+					"name" : "llama_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						4,
+						5
+					],
+					"name" : "llama.cpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "ggml",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-994b10e39a8ea2fa0676.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@81b0c84777fd46238cf1",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-7c56726939cdadc4e274.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@72c1b9c3ecbaa5c3e176",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-3a649ffec392261ecefc.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-a416942e6031f8d9b6bf.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "build_info::@d14b5fb263c3b1bdf3c0",
+					"jsonFile" : "target-build_info-RelWithDebInfo-9bf4567443d4db781403.json",
+					"name" : "build_info",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "common::@d14b5fb263c3b1bdf3c0",
+					"jsonFile" : "target-common-RelWithDebInfo-f927b853c5ff8d73e89b.json",
+					"name" : "common",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml::@0330b3df5fef7ab8cd13",
+					"jsonFile" : "target-ggml-RelWithDebInfo-3d3fcb0a27b58cd07e3e.json",
+					"name" : "ggml",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "llama::@861f781b9061fea4400e",
+					"jsonFile" : "target-llama-RelWithDebInfo-8bc38ad6ad703ba79869.json",
+					"name" : "llama",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llama-llava-cli::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llama-llava-cli-RelWithDebInfo-3ed43820395fbee18e34.json",
+					"name" : "llama-llava-cli",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llama-minicpmv-cli::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llama-minicpmv-cli-RelWithDebInfo-1a3ed3053e86d86aed35.json",
+					"name" : "llama-minicpmv-cli",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llava::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llava-RelWithDebInfo-6ce4373af087cb671331.json",
+					"name" : "llava",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llava_shared::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llava_shared-RelWithDebInfo-ac7462ad052260619d51.json",
+					"name" : "llava_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "llava_static::@90e36de4706d2acacc8e",
+					"jsonFile" : "target-llava_static-RelWithDebInfo-e61797f02f046a337a6a.json",
+					"name" : "llava_static",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/GitHubRepo/LANEING/Cleanser/build",
+		"source" : "D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

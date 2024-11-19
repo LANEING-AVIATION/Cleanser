@@ -1,0 +1,36 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"vendor/llama.cpp/ggml/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "ggml::@0330b3df5fef7ab8cd13"
+		}
+	],
+	"id" : "ALL_BUILD::@72c1b9c3ecbaa5c3e176",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "vendor/llama.cpp/ggml",
+		"source" : "vendor/llama.cpp/ggml"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

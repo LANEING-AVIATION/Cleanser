@@ -1,0 +1,186 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "vendor/llama.cpp/examples/llava/Debug/llava.dll"
+		},
+		{
+			"path" : "vendor/llama.cpp/examples/llava/Debug/llava.lib"
+		},
+		{
+			"path" : "vendor/llama.cpp/examples/llava/Debug/llava.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"llama_cpp_python_install_target",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"vendor/llama.cpp/examples/llava/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 113,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 9,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 17,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "llava::@90e36de4706d2acacc8e"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "ggml::@0330b3df5fef7ab8cd13"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "llama::@861f781b9061fea4400e"
+		}
+	],
+	"id" : "llava_shared::@90e36de4706d2acacc8e",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			},
+			{
+				"backtrace" : 5,
+				"path" : "D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/llama_cpp/lib"
+			},
+			{
+				"backtrace" : 5,
+				"path" : "D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/llama_cpp/lib"
+			},
+			{
+				"backtrace" : 6,
+				"path" : "/llama_cpp/lib"
+			},
+			{
+				"backtrace" : 6,
+				"path" : "/llama_cpp/lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Program Files/llama_cpp"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "..\\..\\src\\Debug\\llama.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "..\\..\\ggml\\src\\Debug\\ggml.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "llava_shared",
+	"nameOnDisk" : "llava.dll",
+	"paths" : 
+	{
+		"build" : "vendor/llama.cpp/examples/llava",
+		"source" : "vendor/llama.cpp/examples/llava"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "D:/GitHubRepo/LANEING/Cleanser/build/vendor/llama.cpp/examples/llava/llava.dir/$(Configuration)/llava.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "D:/GitHubRepo/LANEING/Cleanser/build/vendor/llama.cpp/examples/llava/llava.dir/$(Configuration)/clip.obj",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}
