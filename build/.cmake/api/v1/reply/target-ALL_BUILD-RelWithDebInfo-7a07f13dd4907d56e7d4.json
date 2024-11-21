@@ -1,0 +1,45 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"vendor/llama.cpp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "common::@d14b5fb263c3b1bdf3c0"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "ggml::@0330b3df5fef7ab8cd13"
+		},
+		{
+			"id" : "llama::@861f781b9061fea4400e"
+		},
+		{
+			"id" : "build_info::@d14b5fb263c3b1bdf3c0"
+		}
+	],
+	"id" : "ALL_BUILD::@81b0c84777fd46238cf1",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "vendor/llama.cpp",
+		"source" : "vendor/llama.cpp"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

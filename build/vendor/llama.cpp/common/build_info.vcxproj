@@ -203,7 +203,7 @@ cd D:\GitHubRepo\LANEING\Cleanser\Activities\Intelligence\llama-cpp-python\vendo
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DMSVC=1 -DCMAKE_C_COMPILER_VERSION=19.41.34120.0 -DCMAKE_C_COMPILER_ID=MSVC -DCMAKE_VS_PLATFORM_NAME=x64 "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe" -P D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/vendor/llama.cpp/common/cmake/build-info-gen-cpp.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DMSVC=1 -DCMAKE_C_COMPILER_VERSION=19.42.34433.0 -DCMAKE_C_COMPILER_ID=MSVC -DCMAKE_VS_PLATFORM_NAME=x64 "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe" -P D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/vendor/llama.cpp/common/cmake/build-info-gen-cpp.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -220,7 +220,7 @@ cd D:\GitHubRepo\LANEING\Cleanser\Activities\Intelligence\llama-cpp-python\vendo
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DMSVC=1 -DCMAKE_C_COMPILER_VERSION=19.41.34120.0 -DCMAKE_C_COMPILER_ID=MSVC -DCMAKE_VS_PLATFORM_NAME=x64 "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe" -P D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/vendor/llama.cpp/common/cmake/build-info-gen-cpp.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DMSVC=1 -DCMAKE_C_COMPILER_VERSION=19.42.34433.0 -DCMAKE_C_COMPILER_ID=MSVC -DCMAKE_VS_PLATFORM_NAME=x64 "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe" -P D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/vendor/llama.cpp/common/cmake/build-info-gen-cpp.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -237,7 +237,7 @@ cd D:\GitHubRepo\LANEING\Cleanser\Activities\Intelligence\llama-cpp-python\vendo
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DMSVC=1 -DCMAKE_C_COMPILER_VERSION=19.41.34120.0 -DCMAKE_C_COMPILER_ID=MSVC -DCMAKE_VS_PLATFORM_NAME=x64 "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe" -P D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/vendor/llama.cpp/common/cmake/build-info-gen-cpp.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DMSVC=1 -DCMAKE_C_COMPILER_VERSION=19.42.34433.0 -DCMAKE_C_COMPILER_ID=MSVC -DCMAKE_VS_PLATFORM_NAME=x64 "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe" -P D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/vendor/llama.cpp/common/cmake/build-info-gen-cpp.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -254,7 +254,7 @@ cd D:\GitHubRepo\LANEING\Cleanser\Activities\Intelligence\llama-cpp-python\vendo
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DMSVC=1 -DCMAKE_C_COMPILER_VERSION=19.41.34120.0 -DCMAKE_C_COMPILER_ID=MSVC -DCMAKE_VS_PLATFORM_NAME=x64 "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe" -P D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/vendor/llama.cpp/common/cmake/build-info-gen-cpp.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DMSVC=1 -DCMAKE_C_COMPILER_VERSION=19.42.34433.0 -DCMAKE_C_COMPILER_ID=MSVC -DCMAKE_VS_PLATFORM_NAME=x64 "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe" -P D:/GitHubRepo/LANEING/Cleanser/Activities/Intelligence/llama-cpp-python/vendor/llama.cpp/common/cmake/build-info-gen-cpp.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
