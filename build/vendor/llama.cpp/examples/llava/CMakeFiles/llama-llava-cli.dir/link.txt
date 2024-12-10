@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o CMakeFiles/llava.dir/llava.cpp.o CMakeFiles/llava.dir/clip.cpp.o -o llama-llava-cli  -Wl,-rpath,/mnt/d/GitHubRepo/LANEING/Cleanser/build/vendor/llama.cpp/src:/mnt/d/GitHubRepo/LANEING/Cleanser/build/vendor/llama.cpp/ggml/src: ../../common/libcommon.a ../../src/libllama.so ../../ggml/src/libggml.so 
